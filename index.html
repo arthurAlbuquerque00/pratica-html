@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Página - Fontes, Mapas e Vídeos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Página Completa</h1>
+        <p>Fontes, mapas e vídeos em HTML</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Sobre o local</h2>
+
+            <p>
+                Esse texto usa a fonte <strong>Roboto</strong>,
+                importada do Google Fonts.
+                Fontes externas deixam o site com uma aparência
+                mais profissional.
+            </p>
+
+            <p>
+                Você pode combinar várias fontes:
+                uma para o título e outra para o corpo do texto.
+            </p>
+        </section>
+
+        <section>
+            <h2>Localização</h2>
+
+            <p>Encontre-nos no mapa abaixo:</p>
+
+            <div class="mapa-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=-23.5613,-46.6562&z=15&output=embed"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Vídeos</h2>
+
+            <div class="video-container">
+
+                <video controls loop poster="imagem/capa.jpg" width="100%">
+
+                    <source src="video/para.mp4" type="video/mp4">
+
+                    <source src="video/para.webm" type="video/webm">
+
+                    Seu navegador não suporta a tag de vídeo.
+
+                </video>
+
+            </div>
+
+            <p class="video-info">
+                Formatos suportados: MP4 e WEBM.
+                O atributo <strong>controls</strong> adiciona os
+                controles de reprodução, e
+                <strong>loop</strong> faz o vídeo repetir automaticamente.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Aula de Front-end — fontes, mapas e vídeos</p>
+    </footer>
+
+</body>
+
+</html>
